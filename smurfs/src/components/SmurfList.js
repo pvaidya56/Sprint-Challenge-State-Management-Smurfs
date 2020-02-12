@@ -4,10 +4,15 @@ import { useSelector, useDispatch } from 'react-redux'
 import { fetchSmurfs } from '../actions'
 
 const SmurfList = () => {
+
+    //defining state from redux
     const state = useSelector(state => state);
+   
+    //defining dispatch
     const dispatch = useDispatch();
     console.log(state)
 
+    //useEffect fpr initial data
     useEffect(() => {
         dispatch(fetchSmurfs())
     }, [dispatch])

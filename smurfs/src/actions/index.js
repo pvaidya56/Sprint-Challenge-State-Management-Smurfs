@@ -32,4 +32,5 @@ export const fetchSmurfs = () => dispatch => {
             .catch(err => {
                 dispatch({ type: ADD_SMURF_FAIL, payload: err })
             })
+            
 } 

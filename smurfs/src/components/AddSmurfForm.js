@@ -5,7 +5,10 @@ import { addSmurf } from '../actions'
 
 
 const AddSmurfForm = () => {
+    //defining dispatch
     const dispatch = useDispatch()
+
+    //setting initial form state
     const [newSmurf, setNewSmurf] = useState({
         name: "",
         age: "",
